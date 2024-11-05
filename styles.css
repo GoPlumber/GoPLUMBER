@@ -1,0 +1,559 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #121212; /* Dark theme background */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #1e1e1e; /* Darker header background */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+/* Logo Styling */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f1c40f; /* Gold color for logo */
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links a {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f1c40f; /* Highlight color on hover */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d4ac0d; /* Slightly darker gold on hover */
+}
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://via.placeholder.com/1500x800'); /* Placeholder background image */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(18, 18, 18, 0.8); /* Dark overlay */
+  text-align: center;
+}
+
+.hero-content {
+  color: #ffffff;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+/* Reusing CTA Button Style */
+.cta-button {
+  padding: 15px 30px;
+  background-color: #f1c40f;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d4ac0d;
+}
+/* About Us Section Styling */
+.about {
+  padding: 80px 20px;
+  background-color: #1e1e1e; /* Dark background to match the theme */
+  color: #ffffff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+
+/* About Cards */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  background-color: #2c2c2c; /* Slightly lighter background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #ffffff;
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f1c40f; /* Highlighted title */
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+/* Services Section Styling */
+.services {
+  padding: 80px 20px;
+  background-color: #121212; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.services p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+
+/* Service Cards */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #2c2c2c; /* Slightly lighter background for contrast */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f1c40f; /* Gold color for service titles */
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+/* Contact Us Section Styling */
+.contact {
+  padding: 80px 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  background-color: #2c2c2c; /* Card background color */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f1c40f; /* Gold color for headings */
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Input field background */
+  color: #ffffff;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #f1c40f;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d4ac0d; /* Darker gold on hover */
+}
+/* Testimonials Section Styling */
+.testimonials {
+  padding: 80px 20px;
+  background-color: #121212; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+
+/* Testimonial Cards */
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #2c2c2c; /* Card background color */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+  font-style: italic; /* Italic for testimonials */
+}
+
+.testimonial-card h3 {
+  font-size: 1.25rem;
+  margin: 5px 0 5px;
+  color: #f1c40f; /* Gold color for names */
+}
+
+.testimonial-card span {
+  font-size: 0.9rem;
+  color: #999999; /* Lighter color for titles */
+}
+/* FAQ Section Styling */
+.faq {
+  padding: 80px 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.faq p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+/* Footer Section Styling */
+.footer {
+  padding: 40px 20px;
+  background-color: #121212; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+  max-width: 250px; /* Limit width of columns */
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #f1c40f; /* Gold color for headings */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f1c40f; /* Change color on hover */
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social .social-icon {
+  margin: 5px 0;
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-social .social-icon:hover {
+  color: #f1c40f; /* Change color on hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #999999; /* Lighter color for copyright */
+}
+/* Call to Action Section Styling */
+.cta {
+  padding: 60px 20px;
+  background-color: #f1c40f; /* Bright background for emphasis */
+  color: #1e1e1e;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #1e1e1e; /* Dark button background */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333333; /* Darker shade on hover */
+}
+/* Blog Section Styling */
+.blog {
+  padding: 80px 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+.blog p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+
+/* Blog Posts */
+.blog-posts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  background-color: #2c2c2c; /* Card background color */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f1c40f; /* Gold color for titles */
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline; /* Underline on hover */
+}
